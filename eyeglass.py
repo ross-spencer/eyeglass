@@ -34,7 +34,7 @@ class Eyeglass:
 		
 	def __eofbof__(self):
 		self.magic = '\xBB\x0D\x0A\x65\x79\x65\x67\x6C\x61\x73\x73\x1A\x0A\xAB'		#00 01 0D 0A eyeglass 1A 0A
-		self.padding = ''  
+		self.expansion = ''  
 		self.eof = '\xBB\x65\x6f\x66'	#EOF
 		self.version = 1
 		
@@ -63,7 +63,7 @@ class Eyeglass:
 		file.write(self.datetime)
 		
 		#padding
-		file.write(struct.pack('>88s', self.padding))
+		file.write(struct.pack('>88s', self.expansion))
 		
 		#sphere
 		file.write(struct.pack(self.float, self.sphere['right']))
