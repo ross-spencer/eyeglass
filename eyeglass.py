@@ -7,7 +7,7 @@ import datetime
 import struct
 class EyePrescription:
 
-	ISODATETIMELEN = 19  #LENGTH OF DATE STRING
+	ISODATETIMELEN = 19  #LENGTH OF DATETIME STRING
 
 	def __init__(self):
 	
