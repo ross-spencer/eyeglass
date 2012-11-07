@@ -34,7 +34,7 @@ class EyePrescription:
 	def __eofbof__(self):
 		self.magic = '\xBB\x0D\x0A\x65\x79\x65\x67\x6C\x61\x73\x73\x1A\x0A\xAB'		#00 01 0D 0A eyeglass 1A 0A
 		self.padding = ''  
-		self.eof = '\x00\x65\x6f\x66'	#EOF
+		self.eof = '\xBB\x65\x6f\x66'	#EOF
 		self.version = 1
 		
 	def __date__(self):
@@ -50,25 +50,33 @@ class EyePrescription:
 		#padding
 		file.write(struct.pack('>88s', self.padding))
 		
-		#right
-		file.write(struct.pack('>f', self.sphere['right'])) 			#float
-		file.write(struct.pack('>f', self.cylinder['right'])) 			#float
-		file.write(struct.pack('>i', self.axis['right']))			#int
-		file.write(struct.pack('>f', self.prism['right'])) 			#float
-		file.write(struct.pack('>f', self.base['right'])) 			#float
+		#sphere
+		file.write(struct.pack('>f', self.sphere['right']))
+		file.write(struct.pack('>f', self.sphere['left']))
 		
-		file.write(struct.pack('>f', self.distance_acuity['right'])) 		#float
-		file.write(struct.pack('>f', self.near_acuity['right'])) 		#float
+		#cylinder
+		file.write(struct.pack('>f', self.cylinder['right']))
+		file.write(struct.pack('>f', self.cylinder['left']))
+		
+		#axis
+		file.write(struct.pack('>i', self.axis['right']))
+		file.write(struct.pack('>i', self.axis['left']))
+		
+		#prism
+		file.write(struct.pack('>f', self.prism['right']))
+		file.write(struct.pack('>f', self.prism['left']))
+		
+		#base
+		file.write(struct.pack('>f', self.base['right']))
+		file.write(struct.pack('>f', self.base['left']))
 
-		#left
-		file.write(struct.pack('>f', self.sphere['left'])) 			#float
-		file.write(struct.pack('>f', self.cylinder['left'])) 			#float
-		file.write(struct.pack('>i', self.axis['left'])) 			#int
-		file.write(struct.pack('>f', self.prism['left'])) 			#float
-		file.write(struct.pack('>f', self.base['left'])) 			#float
+		#distance acuity
+		file.write(struct.pack('>f', self.distance_acuity['right']))
+		file.write(struct.pack('>f', self.distance_acuity['left']))
 		
-		file.write(struct.pack('>f', self.distance_acuity['left'])) 		#float
-		file.write(struct.pack('>f', self.near_acuity['left'])) 		#float
+		#near acuity
+		file.write(struct.pack('>f', self.near_acuity['right']))
+		file.write(struct.pack('>f', self.near_acuity['left']))
 
 		#addendum
 		file.write(struct.pack('140s', self.purpose)) 				#140characters
