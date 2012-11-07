@@ -5,7 +5,7 @@
 
 import datetime
 import struct
-class EyePrescription:
+class Eyeglass:
 
 	ISODATETIMELEN = 19  #LENGTH OF DATETIME STRING
 
