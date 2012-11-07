@@ -9,11 +9,10 @@ class Eyeglass:
 
 	ISODATETIMELEN = 19  #LENGTH OF DATETIME STRING
 
-	def __init__(self, bigendian=True):
+	def __init__(self):
 	
 		self.__eofbof__()
 		self.__date__()
-		self.__endian__(bigendian)
 		
 		#right: oculus dexter (OD)
 		#left:  oculus sinister (OS)
@@ -56,7 +55,11 @@ class Eyeglass:
 			self.byte = '>B'
 			self.int =  '>i'
 	
-	def __save__(self, file):
+	def __save__(self, filename, bigendian=True):
+		self.__endian__(bigendian)
+
+		file = open(filename + '.eygl', 'wb')
+
 		file.write(struct.pack('14s', self.magic))
 		file.write(struct.pack(self.byte, self.version))	#unsigned char
 		file.write(struct.pack(self.bool, self.bigendian))	#bool
@@ -100,6 +103,9 @@ class Eyeglass:
 
 		#eof
 		file.write(struct.pack('4s', self.eof))
+
+		#close
+		file.close()
 
 	### Getters and setters below here ###
 
