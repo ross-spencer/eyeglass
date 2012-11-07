@@ -100,3 +100,74 @@ class Eyeglass:
 
 		#eof
 		file.write(struct.pack('4s', self.eof))
+
+	### Getters and setters below here ###
+
+	#setters
+	def setsphere(self, right, left):
+		self.sphere['right'] = right
+		self.sphere['left'] = left
+	
+	def setcylinder(self, right, left):
+		self.cylinder['right'] = right
+		self.cylinder['left'] = left 
+	
+	def setaxis(self, right, left):
+		self.axis['right'] = right
+		self.axis['left'] = left 
+	
+	def setprism(self, right, left): 
+		self.prism['right'] = right
+		self.prism['left'] = left 
+	
+	def setbase(self, right, left): 
+		self.base['right'] = right
+		self.base['left'] = left 
+		
+	def setdistance_acuity(self, right, left): 
+		self.distance_acuity['right'] = right
+		self.distance_acuity['left'] = left 
+	
+	def setnear_acuity(self, right, left):
+		self.near_acuity['right'] = right
+		self.near_acuity['left'] = left 
+		
+	def setpurpose(self, purpose): 
+		self.purpose = purpose
+	
+	def setobservations(self, observations): 
+		self.observations = observations
+	
+	def setnext(self, next):
+		self.next = next
+		
+	#getters
+	def getsphere(self):
+		return self.sphere
+		
+	def getcylinder(self):
+		return self.cylinder
+		
+	def getaxis(self):
+		return self.axis
+		
+	def getprism(self):
+		return self.prism
+		
+	def getbase(self):
+		return self.base
+		
+	def getdistance_acuity(self):
+		return self.distance_acuity
+		
+	def getnear_acuity(self):
+		return self.near_acuity
+		
+	def getpurpose(self):
+		return self.purpose
+		
+	def getobservations(self): 
+		return self.observations
+		
+	def getnext(self):
+		return self.next
