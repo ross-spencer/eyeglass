@@ -6,7 +6,7 @@
 import eyeglass
 eg = eyeglass.Eyeglass()
 
-eg.__save__('default-sample-be')	#default constructor output
+eg.__save__('default-sample-1.0-be')	#default constructor output
 
 #prescription taken from here and augmented for creative purposes
 #http://en.wikipedia.org/wiki/File:Specrx-prescription2.jpg
@@ -21,5 +21,5 @@ eg.setpurpose("Distance and Close Work.")
 eg.setobservations("Patient's eyesight needs correction. History of diabetes in family but indicators found. Standard checkup interval recommended.")
 eg.setnext(1)
 
-eg.__save__('prescription-sample-be', True)	#big-endian
-eg.__save__('prescription-sample-le', False)	#little-endian
+eg.__save__('prescription-sample-1.0-be', True)	#big-endian
+eg.__save__('prescription-sample-1.0-le', False)	#little-endian
