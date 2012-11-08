@@ -23,3 +23,15 @@ Sample 'file format' specification and applications for understanding issues in 
     Observation     - 255 bytes - String
     Next checkup    - 4 bytes   - Float
     End of file     - 4 bytes   - String
+
+The *‘magic number’* identifying the file format will be as follows:
+
+    '\xBB\x0D\x0A\x65\x79\x65\x67\x6C\x61\x73\x73\x1A\x0A\xAB'
+
+The *‘end of file’* sequence terminating the stream will be as follows:
+
+    '\xBB\x65\x6f\x66' 
+
+###Further reading
+
+http://exponentialdecay.co.uk/blog/genesis-of-a-file-format/
