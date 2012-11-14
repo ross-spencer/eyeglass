@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile" Version="80210" DateCreated="2012-11-13T22:54:54+00:00">
+  <InternalSignatureCollection>
+    <!-- [Identification] Eyeglass Format: BOF and EOF -->
+    <InternalSignature ID="1" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>BB0D0A657965676C6173731A0AAB01</Sequence>
+          <DefaultShift>16</DefaultShift>
+          <Shift Byte="BB">15</Shift>
+          <Shift Byte="0D">14</Shift>
+          <Shift Byte="0A">3</Shift>
+          <Shift Byte="65">10</Shift>
+          <Shift Byte="79">11</Shift>
+          <Shift Byte="67">9</Shift>
+          <Shift Byte="6C">8</Shift>
+          <Shift Byte="61">7</Shift>
+          <Shift Byte="73">5</Shift>
+          <Shift Byte="1A">4</Shift>
+          <Shift Byte="AB">2</Shift>
+          <Shift Byte="01">1</Shift>
+        </SubSequence>
+      </ByteSequence>
+      <ByteSequence Reference="EOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>BB656F66</Sequence>
+          <DefaultShift>-5</DefaultShift>
+          <Shift Byte="BB">-1</Shift>
+          <Shift Byte="65">-2</Shift>
+          <Shift Byte="6F">-3</Shift>
+          <Shift Byte="66">-4</Shift>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+    <!-- [Identification] Eyeglass Format: No EOF -->
+    <InternalSignature ID="2" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>BB0D0A657965676C6173731A0AAB01</Sequence>
+          <DefaultShift>16</DefaultShift>
+          <Shift Byte="BB">15</Shift>
+          <Shift Byte="0D">14</Shift>
+          <Shift Byte="0A">3</Shift>
+          <Shift Byte="65">10</Shift>
+          <Shift Byte="79">11</Shift>
+          <Shift Byte="67">9</Shift>
+          <Shift Byte="6C">8</Shift>
+          <Shift Byte="61">7</Shift>
+          <Shift Byte="73">5</Shift>
+          <Shift Byte="1A">4</Shift>
+          <Shift Byte="AB">2</Shift>
+          <Shift Byte="01">1</Shift>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+    <!-- [Characterisation] Eyeglass Format: Big Endian -->
+    <InternalSignature ID="3" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>BB0D0A657965676C6173731A0AAB</Sequence>
+          <DefaultShift>15</DefaultShift>
+          <Shift Byte="BB">14</Shift>
+          <Shift Byte="0D">13</Shift>
+          <Shift Byte="0A">2</Shift>
+          <Shift Byte="65">9</Shift>
+          <Shift Byte="79">10</Shift>
+          <Shift Byte="67">8</Shift>
+          <Shift Byte="6C">7</Shift>
+          <Shift Byte="61">6</Shift>
+          <Shift Byte="73">4</Shift>
+          <Shift Byte="1A">3</Shift>
+          <Shift Byte="AB">1</Shift>
+          <RightFragment MaxOffset="1" MinOffset="1" Position="1">01</RightFragment>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+    <!-- [Characterization] Eyeglass Format: Little Endian -->
+    <InternalSignature ID="4" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>BB0D0A657965676C6173731A0AAB</Sequence>
+          <DefaultShift>15</DefaultShift>
+          <Shift Byte="BB">14</Shift>
+          <Shift Byte="0D">13</Shift>
+          <Shift Byte="0A">2</Shift>
+          <Shift Byte="65">9</Shift>
+          <Shift Byte="79">10</Shift>
+          <Shift Byte="67">8</Shift>
+          <Shift Byte="6C">7</Shift>
+          <Shift Byte="61">6</Shift>
+          <Shift Byte="73">4</Shift>
+          <Shift Byte="1A">3</Shift>
+          <Shift Byte="AB">1</Shift>
+          <RightFragment MaxOffset="1" MinOffset="1" Position="1">00</RightFragment>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+    <!-- [Characterization] Eyeglass format: Invalid Endianness -->
+    <InternalSignature ID="5" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>BB0D0A657965676C6173731A0AAB</Sequence>
+          <DefaultShift>15</DefaultShift>
+          <Shift Byte="BB">14</Shift>
+          <Shift Byte="0D">13</Shift>
+          <Shift Byte="0A">2</Shift>
+          <Shift Byte="65">9</Shift>
+          <Shift Byte="79">10</Shift>
+          <Shift Byte="67">8</Shift>
+          <Shift Byte="6C">7</Shift>
+          <Shift Byte="61">6</Shift>
+          <Shift Byte="73">4</Shift>
+          <Shift Byte="1A">3</Shift>
+          <Shift Byte="AB">1</Shift>
+          <RightFragment MaxOffset="1" MinOffset="1" Position="1">[!00:01]</RightFragment>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+  </InternalSignatureCollection>
+  <FileFormatCollection>
+    <FileFormat ID="1" Name="Eyeglass Format: BOF and EOF" PUID="id/1" Version="1.0" MIMEType="application/x-eygl">
+      <InternalSignatureID>1</InternalSignatureID>
+      <Extension>eygl</Extension>
+      <HasPriorityOverFileFormatID>2</HasPriorityOverFileFormatID>
+    </FileFormat>
+    <FileFormat ID="2" Name="Eyeglass Format: No EOF" PUID="id/2" Version="1.0" MIMEType="application/x-eygl">
+      <InternalSignatureID>2</InternalSignatureID>
+      <Extension>eygl</Extension>
+    </FileFormat>
+    <FileFormat ID="3" Name="Eyeglass Format: Big Endian" PUID="chx/1">
+      <InternalSignatureID>3</InternalSignatureID>
+      <Extension>eygl</Extension>
+    </FileFormat>
+    <FileFormat ID="4" Name="Eyeglass Format: Little Endian" PUID="chx/2">
+      <InternalSignatureID>4</InternalSignatureID>
+      <Extension>eygl</Extension>
+    </FileFormat>
+    <FileFormat ID="5" Name="Eyeglass Format: Invalid Endian Flag" PUID="chx/3">
+      <InternalSignatureID>5</InternalSignatureID>
+      <Extension>eygl</Extension>
+    </FileFormat>
+  </FileFormatCollection>
+</FFSignatureFile>
