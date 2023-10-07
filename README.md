@@ -1,9 +1,10 @@
-eyeglass
-========
+# eyeglass
 
-Sample 'file format' specification and applications for understanding issues in digital preservation. The format stores the information required for an eyeglass prescription for a single patient.
+Sample 'file format' specification and applications for understanding issues in
+digital preservation. The format stores the information required for an eyeglass
+prescription for a single patient.
 
-###Specification
+## Specification
 
     Eyeglass Format Specification 1.0
     ---
@@ -30,8 +31,10 @@ The *‘magic number’* identifying the file format will be as follows:
 
 The *‘end of file’* sequence terminating the stream will be as follows:
 
-    '\xBB\x65\x6f\x66' 
+    '\xBB\x65\x6f\x66'
 
-###Further reading
+## Further reading
 
-http://exponentialdecay.co.uk/blog/genesis-of-a-file-format/
+* [exponentialdecay.co.uk/blog/genesis-of-a-file-format][expo-1].
+
+[expo-1]: http://exponentialdecay.co.uk/blog/genesis-of-a-file-format/
