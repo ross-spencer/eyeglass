@@ -11,9 +11,8 @@ doc: |
    The eyeglass file format. A digital preservation training format.
 seq:
    - id: magic
+     type: magic
      size: 14
-     type: str
-     encoding: utf-8
    - id: version
      size: 1
    - id: endianness
@@ -65,6 +64,29 @@ seq:
    - id: next_checkup_years
      type: f4
    - id: eof
+     type: eof
      size: 4
-     type: str
-     encoding: utf-8
+types:
+   magic:
+      seq:
+         - id: magic_1
+           size: 3
+           doc: "contains non-UTF-8 characters per the specification"
+         - id: magic_2
+           size: 8
+           encoding: utf-8
+           type: str
+           doc: "string 'eyeglass'"
+         - id: magic_3
+           size: 3
+           doc: "contains non-UTF-8 characters per the specification"
+   eof:
+      seq:
+         - id: eof_1
+           size: 1
+           doc: "single non-UTF-8 character prefix"
+         - id: eof_2
+           size: 3
+           type: str
+           encoding: utf-8
+           doc: "string 'eof'"
