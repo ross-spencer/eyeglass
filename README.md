@@ -36,5 +36,7 @@ The *‘end of file’* sequence terminating the stream will be as follows:
 ## Further reading
 
 * [exponentialdecay.co.uk/blog/genesis-of-a-file-format][expo-1].
+* [exponentialdecay.co.uk/blog/shattering-the-eyeglass][expo-2].
 
 [expo-1]: http://exponentialdecay.co.uk/blog/genesis-of-a-file-format/
+[expo-2]: https://exponentialdecay.co.uk/blog/shattering-the-eyeglass/
