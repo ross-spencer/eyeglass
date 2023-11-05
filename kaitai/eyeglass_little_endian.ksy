@@ -57,7 +57,7 @@ seq:
      size: 140
      type: str
      encoding: utf-8
-   - id: observation9
+   - id: observation
      size: 255
      type: str
      encoding: utf-8
