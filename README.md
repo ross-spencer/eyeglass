@@ -43,13 +43,14 @@ to how to better display long lines of text, below.
 ---
 title: "Eyeglass File Format"
 config:
-   paddingX: 100
-   paddingY: 100
-   showbits: true
-   rowHeight: 100
-   rowWidth: 100
-   bitWidth: 100
-   bitsPerRow: 100
+  packet:
+    paddingX: 16
+    paddingY: 16
+    showbits: true
+    rowHeight: 40
+    bitWidth: 140
+    bitsPerRow: 12
+
 ---
 packet-beta 
 0-13: "Magic (14b) [string]"
@@ -74,13 +75,14 @@ packet-beta
 ---
 title: "Eyeglass File Format"
 config:
-   paddingX: 100
-   paddingY: 100
-   showbits: true
-   rowHeight: 100
-   rowWidth: 100
-   bitWidth: 100
-   bitsPerRow: 100
+  packet:
+    paddingX: 16
+    paddingY: 16
+    showbits: true
+    rowHeight: 40
+    bitWidth: 140
+    bitsPerRow: 12
+
 ---
 packet-beta 
 0-13: "Magic (14b) [string]"
